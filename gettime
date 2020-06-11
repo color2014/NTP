@@ -5,5 +5,5 @@ import ntplib
 
 client = ntplib.NTPClient()
 response = client.request('ntp.api.bz')
-# client.request('ntp.tuna.tsinghua.edu.cn')
+# response = client.request('ntp.tuna.tsinghua.edu.cn')
 print datetime.datetime.fromtimestamp(response.tx_time)
